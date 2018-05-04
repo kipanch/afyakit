@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Afya Kit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {
+                font-family: "Gugi", serif
+            }
+
+            body, html {
+                height: 100%;
+                line-height: 1.8;
+            }
+            
+            .my-font-size {
+                font-size: 24px
+            }
+
+            .bgimg-1 {
+                height: 600px;
+    			background-color: #FFFFFF;
+    			background-image: none;
+            }
+            .w3-bar .w3-button {
+                padding: 16px;
+            }
+            
+            .same-height {
+                padding-bottom: 500em;
+                margin-bottom: -500em;
+            }
+            
+            .text-blurb {
+                background-color: black;
+            }
+            
+        </style>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            // Resize elements that should have matching heights
+            $(document).ready(function(){
+                $(window).resize(function(){
+                    var height = $("#navbarHolder").height();
+                    $("#myNavbarPadding").height(height);
+                    
+                    height = $("#about").height();
+                    $("#logoHolder").height(height);
+                });
+                
+                
+            });
+        </script>
+    
+    </head>
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top" id="navbarHolder">
+            
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                
+                <div class="w3-left w3-bar-item">
+                    <a href="#home">
+                      <span class="w3-xxlarge"><strong> AfyaKit</strong></span>
+                    </a>
+                </div>
+                
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a href="#about" class="w3-bar-item w3-button my-font-size">about</a>
+                    <a href="#early_access" class="w3-bar-item w3-button my-font-size">early access</a>
+                    <a href="https://afyakit.com/login" class="w3-bar-item w3-button my-font-size">platform</a>
+                    <a href="#contact" class="w3-bar-item w3-button my-font-size"></i></i> contact</a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                
+            </div>
+            
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+            <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">about</a>
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">contact</a>
+        </nav>
+   
+        <header class="bgimg-1 w3-display-container w3-grayscale-max w3-opacity-min" id="home">
+                  <div class="w3-display-left w3-text-black" style="padding:48px">
+                    <span class="w3-xxxlarge w3-hide-small">Actionable analytics for healthcare in Sub-Saharan Africa</span><br>
+                    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Actionable analytics for healthcare in Sub-Sahran Africa</span><br>
+                    <span class="my-font-size">We develop cutting edge analytics to enable decision making for public health managers.</span>
+                    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn about us</a></p>
+                  </div> 
+                  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                  </div>
+        </header>
+
+            <!-- About Section -->
+            <div class="w3-container w3-center" style="padding:128px 16px" id="about">
+                
+                <p class="w3-center my-font-size">
+                    We are a social venture start-up, focused on improving health outcomes by providing actionable in-facility data to health sector players across Sub Saharan Africa.
+                    <br><br>
+                    Our cutting edge analytics enable decision making for health managers.
+                </p>
+              
+            </div>
+        
+        </div>
+
+        
+        <!-- Email Sign-Ups -->
+        <div class="w3-container w3-large my-font-size w3-light-grey" style="padding:16px 16px" id="early_access">
+            
+            <h3 class="w3-center my-font-size"><strong>Sign up to our mailing list</strong></h3>
+            
+            <form method="POST" class="w3-center my-font-size" onsubmit="return sendFormDetails();" name="sign_up_form">
+                Preferred Name:  <input type="text" name="preferred_name">  
+                Email Address:   <input type="email" name="email"><br><br>
+                <input type="submit" value="Subscribe"><br><br>
+            </form>
+            
+        </div>
+        
+        <script type="text/javascript">
+            
+            function sendFormDetails() {
+                
+                var form = document.forms["sign_up_form"];
+                var payload = {
+                    preferred_name: form["preferred_name"].value,
+                    email: form["email"].value
+                }
+                
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        console.log(this.statusText);
+                    }
+                };
+                xhttp.open("POST", "/", true);
+                xhttp.send(payload);
+            }
+        </script>
+
+        <!-- Contact Section -->
+        <div class="w3-container my-font-size" style="padding:16px 16px" id="contact">
+            
+            <h3 class="w3-center"><strong>CONTACT</strong></h3>
+            <div class="w3-row-padding" style="margin-top:16px">
+                
+                <div class="w3-half">
+                    <p class="w3-center"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Physical Location</p>
+                    <p class="w3-center">Nas Apartments, Suite 7<br>Nass Drive, Off Jakaya Kikwete Road<br>Milimani, Nairobi</p>
+                </div>
+                
+                <div class="w3-half">
+                    <p class="w3-center">Let's get in touch:</p>
+                    <p class="w3-center"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Tel: +254-20-5210461, +1 857 316 6942</p>
+                    <p class="w3-center"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:info@afyakit.com">info@afyakit.com</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-16">
+          <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        </footer>
+        
+        <script>
+
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        
+        </script>
+
+    </body>
+</html>
